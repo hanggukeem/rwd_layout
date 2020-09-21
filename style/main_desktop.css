@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@900&display=swap');
+
+* {
+	color: #333;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	width: 100%;
+}
+header#header {
+	width: 100%;
+	position: absolute;
+
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+div#logo a{
+	color: #f2e3e3;
+		font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	font-weight: bold;
+padding: 10px 20px;
+display: inline-block;
+}
+
+/*GNB menu*/
+nav#menu ul#mainMenu{
+	list-style: none;
+	display: flex;
+}
+
+#mainMenu li a {
+	color: #f2e3e3;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+}
+
+#mainMenu li a:hover {
+	color: #ffffff;
+	border-bottom: 1px solid #fff;
+}
+
+main#main div#first {
+	width: 100%;
+	height: 100vh;
+	background-color: #e6c7c7;
+
+}
+
+main#main div#second {
+	width: 100%;
+	height: 100vh;
+	background-color: #e6daa8;
+
+}
+
+main#main div#third {
+	width: 100%;
+		height: 100vh;
+	background-color: #b7d3ae;
+}
+
+div#fullpage {
+	position: relative;
+}
+
+#main div.slideTxt {
+/*	border: 1px solid #000;*/
+	position:relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#main div.slideTxt h1{
+	color: #f2e3e3;
+	font-family: 'Playfair Display', serif;
+	font-size: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#main div.slideTxt p {
+	color: #f2e3e3;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#fullpage div#first {
+	position: relative;
+}
+
+#fullpage div#first>div.slideTxt{
+	border: 1px solid #000;
+	background-color: #e6c7c7;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div#first>div#love_01 {
+	z-index: 3;
+}
+
+div#first>div#love_02 {
+	z-index: 2;
+}
+
+div#first>div#love_03 {
+	z-index: 1;
+}
